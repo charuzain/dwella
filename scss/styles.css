@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(5, min-content);
+  grid-template-columns: min-content repeat(8, 1fr);
+}
+
+.sidebar {
+  background-color: #c69963;
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
+.header {
+  background-color: #54483A;
+  grid-column: 2/7;
+  grid-row: 1/2;
+}
+
+.realtor {
+  background-color: #101d2c;
+  grid-column: 7/-1;
+  grid-row: 1/2;
+}
+
+.features {
+  background-color: #aaa;
+  grid-column: 3/9;
+  grid-row: 2/3;
+}
+
+.story__pictures {
+  background-color: #c69963;
+  grid-column: 2/6;
+  grid-row: 3/4;
+}
+.story__content {
+  background-color: #54483A;
+  grid-row: 3/4;
+  grid-column: 6/-1;
+}
+
+.list {
+  background-color: #101d2c;
+  grid-row: 4/5;
+  grid-column: 3/9;
+}
+
+.gallery {
+  background-color: #f9f7f6;
+  grid-column: 2/-1;
+  grid-row: 5/6;
+}
+
+.footer {
+  background-color: #101d2c;
+  grid-row: 6/7;
+  grid-column: 2/-1;
+}/*# sourceMappingURL=styles.css.map */

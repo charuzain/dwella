@@ -1,0 +1,72 @@
+@use './partials/colors' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(5, min-content);
+  grid-template-columns: min-content repeat(8, 1fr);
+  // background-color: red;
+}
+.sidebar {
+  background-color: $color-primary;
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: 2/7;
+  grid-row: 1/2;
+}
+
+.realtor {
+  background-color: $color-secondary;
+  grid-column: 7/-1;
+  grid-row: 1/2;
+}
+
+.features {
+  background-color: $color-grey-light-2;
+  grid-column: 3/9;
+  grid-row: 2/3;
+}
+
+.story {
+  &__pictures {
+    background-color: $color-primary;
+    grid-column: 2/6;
+    grid-row: 3/4;
+  }
+  &__content {
+    background-color: $color-grey-dark-1;
+    grid-row: 3/4;
+    grid-column: 6/-1;
+  }
+}
+
+.list {
+  background-color: $color-secondary;
+  grid-row: 4/5;
+  grid-column: 3/9;
+}
+
+.gallery {
+  background-color: $color-grey-light-1;
+  grid-column: 2/-1;
+  grid-row: 5/6;
+}
+
+.footer {
+  background-color: $color-secondary;
+  grid-row: 6/7;
+  grid-column: 2/-1;
+}
