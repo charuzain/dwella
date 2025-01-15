@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dwella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./scss/styles.css" />
   </head>
   <body>
@@ -11,10 +21,299 @@
       <aside class="sidebar">Sidebar</aside>
       <header class="header">Header</header>
       <div class="realtor">Realtor</div>
-      <section class="features">Features</section>
+      <!-- FEATURE START -->
+      <section class="features">
+        <article class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="assets/image/sprite.svg#icon-global"></use>
+          </svg>
+          <h4 class="feature__title">Worldwide Properties</h4>
+          <p class="feature__description">
+            Explore premium properties in prime locations across the globe, from
+            bustling cities to serene countryside retreats.
+          </p>
+        </article>
+        <article class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="assets/image/sprite.svg#icon-trophy"></use>
+          </svg>
+          <h4 class="feature__title">Award-Winning Agents</h4>
+          <p class="feature__description">
+            Work with top-rated agents recognized for their expertise and
+            exceptional customer service in real estate.
+          </p>
+        </article>
+        <article class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <h4 class="feature__title">Prime Locations</h4>
+          <p class="feature__description">
+            Discover properties in hand-picked neighborhoods offering the best
+            in lifestyle, connectivity, and convenience.
+          </p>
+        </article>
+        <article class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+          </svg>
+          <h4 class="feature__title">Move-In Ready</h4>
+          <p class="feature__description">
+            Find homes that are ready for you to move in, complete with modern
+            furnishings and high-quality finishes.
+          </p>
+        </article>
+        <article class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+          </svg>
+          <h4 class="feature__title">Virtual Tours</h4>
+          <p class="feature__description">
+            Experience properties through immersive virtual tours that allow you
+            to explore every corner from your home.
+          </p>
+        </article>
+        <article class="feature">
+          <svg class="feature__icon">
+            <use xlink:href="assets/image/sprite.svg#icon-lock"></use>
+          </svg>
+          <h4 class="feature__title">Secure Transactions</h4>
+          <p class="feature__description">
+            Rest assured with our secure and transparent buying process,
+            designed to keep your interests protected.
+          </p>
+        </article>
+      </section>
+
+      <!-- FEATURE END -->
       <div class="story__pictures">Pictures</div>
       <div class="story__content">Story Content</div>
-      <div class="list">HomeList</div>
+
+      <!-- Home List Start -->
+      <section class="list">
+        <article class="homecard">
+          <img
+            src="assets/image/house-1.jpeg"
+            alt="Home Image"
+            class="homecard__image"
+          />
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <p class="homecard__description">Beautiful Family Home</p>
+
+          <div class="homecard__detail homecard__location">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <span>USA</span>
+          </div>
+          <div class="homecard__detail homecard__room">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <span>5 rooms</span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+            </svg>
+            <span>325 m <sup>2</sup></span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+            </svg>
+            <span>$1,200,000</span>
+          </div>
+          <button class="homecard__button">Contact Relator</button>
+        </article>
+        <article class="homecard">
+          <img
+            src="assets/image/house-2.jpeg"
+            alt="Home Image"
+            class="homecard__image"
+          />
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <p class="homecard__description">Modren Glass Villa</p>
+          <div class="homecard__detail homecard__location">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <span>Canada</span>
+          </div>
+          <div class="homecard__detail homecard__room">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <span>6 rooms</span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+            </svg>
+            <span>525 m <sup>2</sup></span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+            </svg>
+            <span>$9,200,000</span>
+          </div>
+          <button class="homecard__button">Contact Relator</button>
+        </article>
+        <article class="homecard">
+          <img
+            src="assets/image/house-3.jpeg"
+            alt="Home Image"
+            class="homecard__image"
+          />
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <p class="homecard__description">Cozy Country House</p>
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <div class="homecard__detail homecard__location">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <span>USA</span>
+          </div>
+          <div class="homecard__detail homecard__room">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <span>5 rooms</span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+            </svg>
+            <span>325 m <sup>2</sup></span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+            </svg>
+            <span>$1,200,000</span>
+          </div>
+          <button class="homecard__button">Contact Relator</button>
+        </article>
+        <article class="homecard">
+          <img
+            src="assets/image/house-4.jpeg"
+            alt="Home Image"
+            class="homecard__image"
+          />
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <p class="homecard__description">Large Rustical Villa</p>
+          <div class="homecard__detail homecard__location">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <span>USA</span>
+          </div>
+          <div class="homecard__detail homecard__room">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <span>15 rooms</span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+            </svg>
+            <span>3125 m <sup>2</sup></span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+            </svg>
+            <span>$1,200,000</span>
+          </div>
+          <button class="homecard__button">Contact Relator</button>
+        </article>
+        <article class="homecard">
+          <img
+            src="assets/image/house-5.jpeg"
+            alt="Home Image"
+            class="homecard__image"
+          />
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <p class="homecard__description">Majestic Palace House</p>
+
+          <div class="homecard__detail homecard__location">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <span>Germany</span>
+          </div>
+          <div class="homecard__detail homecard__room">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <span>25 rooms</span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+            </svg>
+            <span>7625 m <sup>2</sup></span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+            </svg>
+            <span>$99,200,000</span>
+          </div>
+          <button class="homecard__button">Contact Relator</button>
+        </article>
+        <article class="homecard">
+          <img
+            src="assets/image/house-6.jpeg"
+            alt="Home Image"
+            class="homecard__image"
+          />
+          <svg class="homecard__icon homecard__like">
+            <use xlink:href="assets/image/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <p class="homecard__description">Modern Familiy Apartment</p>
+          <div class="homecard__detail homecard__location">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <span>USA</span>
+          </div>
+          <div class="homecard__detail homecard__room">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <span>5 rooms</span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-presentation"></use>
+            </svg>
+            <span>325 m <sup>2</sup></span>
+          </div>
+          <div class="homecard__detail">
+            <svg class="homecard__icon">
+              <use xlink:href="assets/image/sprite.svg#icon-key"></use>
+            </svg>
+            <span>$1,200,000</span>
+          </div>
+          <button class="homecard__button">Contact Relator</button>
+        </article>
+      </section>
+      <!-- Home List End -->
       <div class="gallery">Gallery</div>
       <footer class="footer">Footer</footer>
     </div>

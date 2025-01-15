@@ -1,4 +1,6 @@
 @use './partials/colors' as *;
+@use './partials/mixins' as *;
+@use './partials/typography' as *;
 
 * {
   margin: 0;
@@ -7,7 +9,10 @@
 }
 
 body {
-  // color: white;
+font-family: $font-primary;
+}
+img{
+  display: block;
 }
 
 .container {
@@ -35,9 +40,38 @@ body {
 }
 
 .features {
-  background-color: $color-grey-light-2;
+  margin: 10rem 0;
   grid-column: 3/9;
   grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6rem;
+  row-gap: 8rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 1.7rem;
+  row-gap: 1.3rem;
+  // align-content: space-between;
+
+  &__icon {
+    // width: 100%;
+    fill: $color-primary;
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translateY(-0.5rem);
+    grid-row: 1/-1;
+  }
+
+  &__title {
+    @include heading(1.2rem);
+    color: $color-grey-dark-1;
+  }
+
+
 }
 
 .story {
@@ -54,9 +88,93 @@ body {
 }
 
 .list {
-  background-color: $color-secondary;
   grid-row: 4/5;
   grid-column: 3/9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3rem;
+  margin: 6rem 0;
+}
+.homecard {
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+
+  &__image-container {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+  }
+
+  &__image {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+  }
+
+  &__like{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    z-index: 1000;
+    justify-self: end;
+    margin-top: 0.625rem;
+    margin-right:0.5rem;
+
+  }
+
+  &__description {
+    font-family: $font-display;
+    font-size: 0.8rem;
+    background-color: $color-secondary;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    color: $color-grey-light-1;
+    width: 80%;
+    padding: 0.6rem;
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+    transform: translateY(1rem);
+  }
+
+  &__location , &__room{
+    margin-top: 1rem;
+  }
+  
+
+  &__detail {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    margin-left:  0.8rem;
+    margin-right: 0.8rem;
+    font-size: .75rem;
+  }
+
+  &__icon {
+    fill: $color-primary;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &__button {
+    grid-column: 1/-1;
+    background-color: $color-primary;
+    border: none;
+    color: $color-grey-light-1;
+    padding: 0.65rem 0;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-family: $font-display;
+
+
+    &:hover {
+      background-color: $color-primary-dark;
+      cursor: pointer;
+      
+    }
+  }
 }
 
 .gallery {
@@ -70,3 +188,5 @@ body {
   grid-row: 6/7;
   grid-column: 2/-1;
 }
+
+// -1 works with explicit grid only

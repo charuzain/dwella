@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+img {
+  display: block;
+}
+
 .container {
   display: grid;
   grid-template-rows: 80vh repeat(5, min-content);
@@ -29,9 +37,36 @@
 }
 
 .features {
-  background-color: #aaa;
+  margin: 10rem 0;
   grid-column: 3/9;
   grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+  row-gap: 8rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, min-content);
+  -moz-column-gap: 1.7rem;
+       column-gap: 1.7rem;
+  row-gap: 1.3rem;
+}
+.feature__icon {
+  fill: #c69963;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(-0.5rem);
+  grid-row: 1/-1;
+}
+.feature__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #54483A;
 }
 
 .story__pictures {
@@ -46,9 +81,80 @@
 }
 
 .list {
-  background-color: #101d2c;
   grid-row: 4/5;
   grid-column: 3/9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3rem;
+  margin: 6rem 0;
+}
+
+.homecard {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+.homecard__image-container {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.homecard__image {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  width: 100%;
+}
+.homecard__like {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  z-index: 1000;
+  justify-self: end;
+  margin-top: 0.625rem;
+  margin-right: 0.5rem;
+}
+.homecard__description {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
+  background-color: #101d2c;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  color: #f9f7f6;
+  width: 80%;
+  padding: 0.6rem;
+  align-self: end;
+  justify-self: center;
+  text-align: center;
+  transform: translateY(1rem);
+}
+.homecard__location, .homecard__room {
+  margin-top: 1rem;
+}
+.homecard__detail {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  font-size: 0.75rem;
+}
+.homecard__icon {
+  fill: #c69963;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.homecard__button {
+  grid-column: 1/-1;
+  background-color: #c69963;
+  border: none;
+  color: #f9f7f6;
+  padding: 0.65rem 0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.homecard__button:hover {
+  background-color: #B28451;
+  cursor: pointer;
 }
 
 .gallery {

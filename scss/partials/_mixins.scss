@@ -1,0 +1,9 @@
+@use './typography' as *;
+
+@mixin heading($font-size){
+font-family: $font-display;
+font-weight: 400;
+font-size :$font-size
+}
+
+//h4 1.9rem
