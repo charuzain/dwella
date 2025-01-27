@@ -1,4 +1,6 @@
 @use './typography' as *;
+@use './colors' as *;
+
 
 @mixin heading($font-size){
 font-family: $font-display;
@@ -7,7 +9,18 @@ font-size :$font-size
 }
 
 @mixin btn{
-  
+    background-color: $color-primary;
+    border: none;
+    color: $color-grey-light-1;
+    padding: 0.65rem 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-family: $font-display;
+
+     &:hover {
+      background-color: $color-primary-dark;
+      cursor: pointer;
+    }
 }
 
 //h4 1.9rem
