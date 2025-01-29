@@ -34,15 +34,125 @@ li {
 }
 
 .header {
-  background-color: #54483A;
   grid-column: 2/7;
   grid-row: 1/2;
+  display: grid;
+  grid-template-rows: 1fr 1fr max-content max-content;
+  row-gap: 1rem;
+  padding: 2rem 6rem;
+  align-content: space-between;
+  border: 2px solid red;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("/assets/image/house-3.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.header__logo {
+  border: 3px solid red;
+  justify-self: center;
+}
+.header__main {
+  border: 2px solid red;
+}
+.header__subtitle {
+  text-transform: uppercase;
+  color: #B28451;
+  font-size: 0.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.header__title {
+  color: #f9f7f6;
+  font-size: 2.25rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.header__button {
+  background-color: #c69963;
+  border: none;
+  color: #f9f7f6;
+  padding: 0.65rem 0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1rem;
+}
+.header__button:hover {
+  background-color: #B28451;
+  cursor: pointer;
+}
+.header__punchline {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 1rem;
+  color: #aaa;
+  align-items: center;
+}
+.header__punchline::before {
+  content: "";
+  height: 0.5px;
+  display: block;
+  background-color: #aaa;
+}
+.header__punchline::after {
+  content: "";
+  height: 0.5px;
+  display: block;
+  background-color: #aaa;
+}
+.header__brand {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 4.5rem;
+       column-gap: 4.5rem;
+  border: 2px solid red;
+  align-items: center;
+}
+.header__brand-logo {
+  width: 100%;
 }
 
 .realtor {
   background-color: #101d2c;
   grid-column: 7/-1;
   grid-row: 1/2;
+  padding: 4rem 2rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+.realtor__title {
+  text-transform: uppercase;
+  color: #c69963;
+  font-size: 0.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  justify-self: center;
+}
+.realtor__list {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  color: #f9f7f6;
+  justify-items: center;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 2rem;
+  padding: 1rem;
+}
+.realtor__image {
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+}
+.realtor__name {
+  color: #f9f7f6;
+  text-transform: capitalize;
+}
+.realtor__statistics {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.5rem;
 }
 
 .features {
@@ -320,6 +430,7 @@ li {
   transition: transform 0.4s;
   font-family: "Josefin Sans", sans-serif;
   color: #fff;
+  font-size: 0.8rem;
 }
 .footer__link:hover {
   background-color: rgba(255, 255, 255, 0.05);
