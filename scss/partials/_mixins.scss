@@ -1,6 +1,29 @@
 @use './typography' as *;
 @use './colors' as *;
 
+$mobile-breakpoint:425px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet-and-desktop {
+  @media screen and (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
 
 @mixin heading($font-size){
 font-family: $font-display;

@@ -18,7 +18,9 @@
   </head>
   <body>
     <div class="container">
-      <aside class="sidebar">Sidebar</aside>
+      <aside class="sidebar"><button class="sidebar__btn"></button></aside>
+
+      <!-- Header Section Start -->
       <header class="header">
         <img
           src="/assets/icons/dwella.svg"
@@ -26,7 +28,7 @@
           class="header__logo"
         />
         <div class="header__main">
-          <h2 class="header__subtitle">Your own home</h2>
+          <h3 class="header__subtitle">Your own home</h3>
           <h1 class="header__title">The ultimate personal freedom</h1>
           <button class="header__button">View our properties</button>
         </div>
@@ -55,39 +57,46 @@
           />
         </div>
       </header>
+      <!-- Header Section End -->
 
-      <!-- Realtor -->
+      <!-- Realtor Section Start -->
       <div class="realtor">
         <h2 class="realtor__title">top 3 realtors</h2>
         <section class="realtor__list">
-            <img
-              src="/assets/image/realtor-1.jpeg"
-              alt="Realtor 1"
-              class="realtor__image"
-            />
+          <img
+            src="/assets/image/realtor-1.jpeg"
+            alt="Realtor 1"
+            class="realtor__image"
+          />
           <div>
             <p class="realtor__name">Erik feinman</p>
             <p class="realtor__statistics">250 Houses sold</p>
           </div>
 
-            <img
-              src="/assets/image/realtor-2.jpeg"
-              alt="Realtor 2"
-              class="realtor__image"
-            />
+          <img
+            src="/assets/image/realtor-2.jpeg"
+            alt="Realtor 2"
+            class="realtor__image"
+          />
           <div>
             <p class="realtor__name">Sarah jasper</p>
             <p class="realtor__statistics">230 Houses sold</p>
           </div>
 
-            <img src="/assets/image/realtor-3.jpeg" alt="Realtor 3" class="realtor__image"  />
+          <img
+            src="/assets/image/realtor-3.jpeg"
+            alt="Realtor 3"
+            class="realtor__image"
+          />
           <div>
             <p class="realtor__name">Toby seth</p>
             <p class="realtor__statistics">220 Houses sold</p>
           </div>
         </section>
       </div>
-      <!-- FEATURE START -->
+      <!-- Realtor Section End -->
+
+      <!-- Features Section Start -->
       <section class="features">
         <article class="feature">
           <svg class="feature__icon">
@@ -150,35 +159,40 @@
           </p>
         </article>
       </section>
+      <!-- Features Section End -->
 
-      <!-- FEATURE END -->
+      <!-- Customer Image Section Start -->
       <div class="story__pictures">
-        <img
-          src="/assets/image/story-1.jpeg"
-          alt="Customer Image"
-          class="story__image"
-        />
+        <div class="story__image-container">
+          <img
+            src="/assets/image/story-1.jpeg"
+            alt="Customer Image"
+            class="story__image"
+          />
+        </div>
         <img
           src="/assets/image/story-2.jpeg"
           alt="Customer home image"
           class="story__image-2"
         />
       </div>
+      <!-- Customer Image Section End  -->
 
-      <!-- Story content -->
+      <!-- Testimonial Section Start -->
       <div class="story__content">
         <h3 class="story__heading">Happy customers</h3>
         <h2 class="story__quote">
           &ldquo;The best decision of our lives&rdquo;
         </h2>
         <p class="story__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-          consectetur dolorem odio! Magni obcaecati aliquid hic, molestiae non
-          voluptatibus culpa numquam modi libero adipisci quae dolore.
-          Recusandae consequuntur tempore nihil.
+          Moving into our dream home was an incredible experience. The entire
+          process was seamless, and the team went above and beyond to ensure we
+          found the perfect place. From start to finish, it felt like we were in
+          great hands. We couldn't be happier with our decision.
         </p>
         <button class="story__button">Find your own home</button>
       </div>
+      <!-- Testimonial Section End -->
 
       <!-- Home List Start -->
       <section class="list">
@@ -507,44 +521,9 @@
           />
         </div>
       </div>
-      <!-- <div class="gallery">
-        <div class="gallery__image-1">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" class="gallery__image" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-        <div class="gallery__image">
-          <img src="/assets/image/gal-1.jpeg" alt="Home-1" />
-        </div>
-      
-      </div> -->
+      <!-- Gallery Section End -->
 
-      <!-- FOOTER -->
+      <!-- Footer -->
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item">
@@ -568,9 +547,9 @@
           </li>
         </ul>
         <p class="footer__copyright">
-          &copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this
-          project for your own purposes. This does NOT apply if you plan to
-          produce your own course or tutorials based on this project.
+          &copy; All rights reserved.This platform is dedicated to helping you
+          find your dream home. Feel free to explore and make use of our
+          services to find your ideal property.
         </p>
       </footer>
     </div>
